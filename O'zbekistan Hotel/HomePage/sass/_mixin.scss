@@ -1,0 +1,13 @@
+@mixin button {
+  border: 1px solid $yellow_color;
+  background: none;
+  color: $yellow_color;
+  font-size: 16px;
+  font-family: "Segoe UI";
+  padding: 15px 28px;
+}
+
+@mixin button_hover {
+  transition: all 0.5s ease;
+  background: #f0b82017;
+}

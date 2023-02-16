@@ -1,0 +1,114 @@
+header {
+  background: $nav_color;
+  color: $white_color;
+
+  .header_items {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_logo {
+      a {
+        text-decoration: none;
+        color: $white_color;
+        font-size: 21px;
+        font-weight: 400;
+        font-family: "Roboto";
+
+        span {
+          color: #1785ed;
+        }
+      }
+    }
+
+    &_contents {
+      display: flex;
+      align-items: center;
+      gap: 45px;
+
+      &_icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        a {
+          color: $white_color;
+          text-decoration: none;
+          font-size: 23px;
+        }
+      }
+
+      &_tel {
+        a {
+          text-decoration: none;
+          // color: $yellow_color;
+          color: $yellow_color;
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: 500px;
+          font-family: "Segoe UI";
+        }
+      }
+
+      &_usd {
+        button {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background: none;
+          border: none;
+          color: $white_color;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19px;
+          font-family: "Segoe UI";
+        }
+      }
+
+      &_Lang {
+        button {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background: none;
+          border: none;
+          color: $white_color;
+          font-size: 16px;
+          font-weight: 600;
+          font-family: "Segoe UI";
+          line-height: 19px;
+
+          img {
+            width: 25px;
+          }
+        }
+      }
+
+      &_bookingPlace {
+        button {
+          @include button;
+        }
+
+        button:hover {
+          @include button_hover;
+        }
+      }
+
+      &_Entering {
+        a {
+          text-decoration: none;
+          color: $white_color;
+          font-family: "Segoe UI";
+        }
+
+        a:hover {
+          color: $yellow_color;
+          font-family: "Segoe UI";
+          hr {
+            color: $yellow_color;
+          }
+        }
+      }
+    }
+  }
+}

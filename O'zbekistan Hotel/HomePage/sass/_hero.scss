@@ -1,0 +1,38 @@
+.hero {
+    font-family: "Segoe UI", sans-serif;
+  &_items {
+    display: flex;
+    gap: 5px;
+
+    &_mainPic {
+      width: 1280px;
+      height: 502px;
+      overflow: hidden;
+      position: relative;
+      img {
+        position: absolute;
+        width: 117%;
+        height: 100%;
+        left: -52px;
+        right: 0px;
+      }
+    }
+
+    &_pics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      .rooms {
+        position: relative;
+        width: 339px;
+        height: 250px;
+        overflow: hidden;
+        img {
+          position: absolute;
+          width: 106%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -8,7 +8,6 @@
 .container {
   max-width: 1360px;
   padding: 0px 15px;
-  border: 1px solid red;
   margin: 0 auto;
 }
 
@@ -153,11 +152,9 @@ header .header_items_contents_Entering a:hover hr {
   transition: all 1s;
 }
 .about_items {
-  border: 1px solid green;
   padding: 30px 0px 0px 100px;
 }
 .about_items_uzbHotel {
-  border: 1px solid gold;
   width: 716px;
 }
 .about_items_uzbHotel_title h2 {

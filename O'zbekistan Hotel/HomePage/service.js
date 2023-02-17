@@ -6,7 +6,7 @@ const types_block = document.querySelector(".types_block");
 allServiceAnchor.addEventListener(
   "click",
   (toggle = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     if (types_block.style.display === "none") {
       types_block.style.display = "flex";
       allServiceAnchor.textContent = "Kamroq xizmat turlarini ko'rsatish";

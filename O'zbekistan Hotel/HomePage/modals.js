@@ -1,45 +1,122 @@
-const form = document.querySelector(".form");
-const value = document.querySelector(".value");
-const x2 = document.querySelector(".x2");
-const x3 = document.querySelector(".x3");
-const myX2 = document.querySelector("#optionsx2");
-// const options = document.querySelectorAll(".options");
-const selectP = document.querySelectorAll(".selectP");
-const optionP = document.querySelectorAll(".optionP");
-const optionP2 = document.querySelectorAll(".optionP2");
-const table_content = document.querySelector(".table_content");
-const _selected = document.querySelectorAll("._selected");
+const select22 = document.querySelector(".selecRoomNum");
+const selecRoomNumNew = document.querySelector(".selecRoomNumNew");
+const selecRoomNumOne = document.querySelector(".selecRoomNumOne");
+const selecRoomNumSecond = document.querySelector(".selecRoomNumSecond");
+const selecRoomNumThird = document.querySelector(".selecRoomNumThird");
 
-// *** Rooms *** \\
+const oneTable = document.querySelector(".oneTable");
+const NewTable = document.querySelector(".NewTable");
 
-value.addEventListener(
-  "click",
-  (showBads = () => {
-    if (x2.classList.contains("_modal")) {
-      x2.classList.remove("_modal");
-    } else {
-      x2.classList.add("_modal");
-    }
-  })
-);
+// // console.log(select22);
 
-value.addEventListener(
-  "click",
-  (showBads2 = () => {
-    if (x3.classList.contains("_modalx3")) {
-      x3.classList.remove("_modalx3");
-    } else {
-      x3.classList.add("_modalx3");
-    }
-  })
-);
+// select22.forEach((el) => {
+//   console.log(el.value);
+//   onChange(el.value);
+//   el.onchange = onChange;
+//   function onChange(val) {
+//     // commented
+//     // let value = select22.value;
+//     let value = el.options[el.selectedIndex].text;
+//     // commented
+//     // let text = select22.options[select22.selectedIndex].text;
+//     console.log("value", value);
+//     if (value > 0) {
+//       oneTable.classList.add("blueBorder");
+//     } else {
+//       oneTable.classList.remove("blueBorder");
+//     }
+//   }
+// });
 
-function choosing() {
-  console.log("fooo");
+// // select22.onchange = onChange;
+// // commented
+
+// // onChange();
+
+// First \\
+
+function onChange() {
+  let value = select22.value;
+  // let text = select22.options[select22.selectedIndex].text;
+  // console.log(value, text);
+  if (select22.value > 0) {
+    oneTable.classList.add("blueBorder");
+  } else {
+    oneTable.classList.remove("blueBorder");
+    // console.log("bbb");
+  }
 }
+select22.onchange = onChange;
 
-choosing();
-showBads();
-showBads2();
+onChange();
+
+// Second \\
+
+function onChangeNew() {
+  let value = selecRoomNumNew.value;
+  let text = selecRoomNumNew.options[selecRoomNumNew.selectedIndex].text;
+  console.log(value, text);
+  if (selecRoomNumNew.value > 0) {
+    oneTable.classList.add("blueBorderAgain");
+  } else {
+    oneTable.classList.remove("blueBorderAgain");
+    console.log("bbagainb");
+  }
+}
+selecRoomNumNew.onchange = onChangeNew;
+
+onChangeNew();
+
+// Third \\
+
+function onChangeOne() {
+  let value = selecRoomNumOne.value;
+  let text = selecRoomNumOne.options[selecRoomNumOne.selectedIndex].text;
+  // console.log(value, text);
+  if (selecRoomNumOne.value > 0) {
+    NewTable.classList.add("blueBorderAgain");
+  } else {
+    NewTable.classList.remove("blueBorderAgain");
+    // console.log("bbagainb");
+  }
+}
+selecRoomNumOne.onchange = onChangeOne;
+
+onChangeOne();
+
+// Fourth \\
+
+function onChangeSecond() {
+  let value = selecRoomNumSecond.value;
+  let text = selecRoomNumSecond.options[selecRoomNumSecond.selectedIndex].text;
+  // console.log(value, text);
+  if (selecRoomNumSecond.value > 0) {
+    NewTable.classList.add("blueBorderSecond");
+  } else {
+    NewTable.classList.remove("blueBorderSecond");
+    // console.log("bbagainb");
+  }
+}
+selecRoomNumSecond.onchange = onChangeSecond;
+
+onChangeSecond();
 
 
+
+// Fifth \\
+
+
+function onChangeFivth() {
+  let value = selecRoomNumThird.value;
+  let text = selecRoomNumThird.options[selecRoomNumThird.selectedIndex].text;
+  // console.log(value, text);
+  if (selecRoomNumThird.value > 0) {
+    NewTable.classList.add("blueBorderThird");
+  } else {
+    NewTable.classList.remove("blueBorderThird");
+    // console.log("bbagainb");
+  }
+}
+selecRoomNumThird.onchange = onChangeFivth;
+
+onChangeFivth();

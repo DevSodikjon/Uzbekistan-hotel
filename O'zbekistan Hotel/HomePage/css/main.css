@@ -8,6 +8,7 @@
 .container {
   max-width: 1360px;
   padding: 0px 15px;
+  border: 1px solid red;
   margin: 0 auto;
 }
 
@@ -152,9 +153,11 @@ header .header_items_contents_Entering a:hover hr {
   transition: all 1s;
 }
 .about_items {
+  border: 1px solid green;
   padding: 30px 0px 0px 100px;
 }
 .about_items_uzbHotel {
+  border: 1px solid gold;
   width: 716px;
 }
 .about_items_uzbHotel_title h2 {
@@ -563,7 +566,7 @@ header .header_items_contents_Entering a:hover hr {
   position: relative;
   padding: 0;
   margin-top: -20px;
-  transition: all 0.3s ease !important;
+  transition: all 0.8s ease !important;
   opacity: 0;
   visibility: hidden;
 }
@@ -575,87 +578,119 @@ header .header_items_contents_Entering a:hover hr {
 .about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms form .forBtn {
   display: block;
   border: 1px solid #e2e4e6;
-  padding: 10px 20px;
+  padding: 2px 0px 2px 5px;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms form li {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms form .forBtn .aDiv {
+  display: flex;
+  align-items: center;
+}
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms form .forBtn .aDiv p {
+  line-height: 16px !important;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400 !important;
+  color: #333;
+}
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms form .forBtn img {
+  width: 20px;
+  height: 20px;
+}
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms form .forBtn i {
+  font-size: 25px;
+  color: #dfd6d6;
+}
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms li {
   border: 1px solid #e2e4e6;
   display: flex;
   padding: 8px 0px 7px 5px;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms form li h4 {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms li h4 {
   line-height: 16px;
   font-style: normal;
   font-size: 12px;
   font-weight: 400;
   color: #333;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms form li img {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .td .about_rooms li img {
   width: 20px;
   height: 20px;
   margin-right: 27px;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .roomsNum .user {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .roomsNum .user {
   padding: 10px 19px 100px 18px;
   border-top: 1px solid #e2e4e6;
   height: 179px;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .price .price_in {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .price .price_in {
   padding: 10px 19px 100px 18px;
   border-top: 1px solid #e2e4e6;
   height: 179px;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .price .price_in p {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .price .price_in p {
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0;
   color: #282828;
   margin-top: 5px;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .parametrs {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .parametrs {
   padding: 10px 19px 5px 18px;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .parametrs .parametrs_parts {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .parametrs .parametrs_parts {
   padding: 14px 0px 0px 17px !important;
   display: flex;
   gap: 5px;
   margin-top: 3px;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .parametrs .parametrs_parts i {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .parametrs .parametrs_parts i {
   font-size: 16px;
   color: #4cd964;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .parametrs .parametrs_parts img {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .parametrs .parametrs_parts img {
   margin-top: -49px;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .parametrs .parametrs_parts p {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .parametrs .parametrs_parts p {
   font-weight: 400;
   font-size: 12px;
   color: #282828;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .parametrs .parametrs_parts p span {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .parametrs .parametrs_parts p span {
   color: #4cd964;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .parametrs .parametrs_parts .cencel {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .parametrs .parametrs_parts .cencel {
   color: #4cd964;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .choosingRoom {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .choosingRoom {
   font-weight: 400;
   font-size: 11px;
   letter-spacing: 0;
   color: #333;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .choosingRoom .select_s {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .choosingRoom .select_s {
   padding: 10px 19px 100px 18px;
   border-top: 1px solid #e2e4e6;
   height: 179px;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .table_content .choosingRoom .select_s select {
+.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .choosingRoom .select_s select {
   width: 100%;
   padding: 0px 17px 0px 7px;
   border: none;
   border: 1px solid #e3e3e3;
 }
-.about_items_uzbHotel_availablePlace .availablePlace_items .availablePlace_items_contents .blueBorder {
+.about_items_uzbHotel_availablePlace .availablePlace_items .blueBorder {
+  border: 1px solid #0369d9;
+  background: rgba(0, 122, 255, 0.05);
+}
+.about_items_uzbHotel_availablePlace .availablePlace_items .blueBorderAgain {
+  border: 1px solid #0369d9;
+  background: rgba(0, 122, 255, 0.05);
+}
+.about_items_uzbHotel_availablePlace .availablePlace_items .blueBorderSecond {
+  border: 1px solid #0369d9;
+  background: rgba(0, 122, 255, 0.05);
+}
+.about_items_uzbHotel_availablePlace .availablePlace_items .blueBorderThird {
   border: 1px solid #0369d9;
   background: rgba(0, 122, 255, 0.05);
 }

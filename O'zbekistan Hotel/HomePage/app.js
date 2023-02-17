@@ -3,30 +3,46 @@ const select = document.querySelector(".selectsmy");
 const options = document.querySelectorAll(".options");
 // const options = document.querySelectorAll(".allDiv");
 let arr = [
-  " ikkita alohida to'shakli ikki kishilik yotoq",
-  "ikkita alohida to'shakli ikki kishilik yotoq",
-  "Uchta alohida to'shakli uch kishilik yotoq",
+  {
+    title: " ikkita alohida to'shakli ikki kishilik yotoq",
+    img: "./img/x2.png"
+  },
+  {
+    title: " ikkita alohida to'shakli ikki kishilik yotoq",
+    img: "./img/x2.png"
+  },
+  {
+    title: "Uchta alohida to'shakli uch kishilik yotoq",
+    img: "./img/x3.png"
+  },
+  
 ];
 
 for (let i = 1; i < arr.length; i++) {
-  btn.textContent = arr[0];
+  const img1 = document.querySelector(".aDiv-child2");
+  const p = document.querySelector(".aDiv-child");
+  p.textContent = arr[0].title;
+  img1.src = arr[0].img;
+
   const selectOp = document.createElement("li");
   const img = document.createElement("img");
   const h4 = document.createElement("h4");
-  img.src = "./img/x2.png";
-  h4.textContent = arr[i];
+  let imgSrc = arr[i].img;
+  img.src = imgSrc;
+  h4.textContent = arr[i].title;
   selectOp.append(h4);
   selectOp.append(h4);
   selectOp.append(img);
-  // selectOp.append(div);
-  // selectOp.textContent = arr[i];
   selectOp.classList.add("options");
-  console.log(selectOp);
+  // console.log(selectOp);
   select.append(selectOp);
   selectOp.addEventListener("click", () => {
-    arr.unshift(selectOp.textContent);
-    btn.textContent = selectOp.textContent;
+    arr.pop();
+    arr.unshift({ title: h4.textContent, img: imgSrc });
+    p.textContent = arr[0].title;
+    img1.src = arr[0].img;
     select.classList.remove("enable");
+    console.log(arr);
   });
 }
 

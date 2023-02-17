@@ -2,11 +2,11 @@
   font-family: "Segoe UI", sans-serif;
   transition: all 1s;
   &_items {
-    // border: 1px solid green;
+    border: 1px solid green;
     padding: 30px 0px 0px 100px;
 
     &_uzbHotel {
-      // border: 1px solid gold;
+      border: 1px solid gold;
       width: 716px;
       &_title {
         h2 {
@@ -469,119 +469,6 @@
                       color: #282828;
                     }
 
-                    // form {
-                    //   width: 176.4px;
-                    //   position: relative;
-                    //   transition: all 1s ease;
-
-                    //   .value {
-                    //     transition: all 1s ease;
-                    //     border: 1px solid #e2e4e6;
-                    //     display: flex;
-                    //     align-items: center;
-                    //     gap: 3px;
-                    //     padding: 2px 0px 2px 5px;
-
-                    //     p {
-                    //       line-height: 16px !important;
-                    //       font-style: normal;
-                    //       font-size: 12px;
-                    //       font-weight: 400 !important;
-                    //       color: #333;
-                    //     }
-
-                    //     img {
-                    //       width: 20px;
-                    //       height: 20px;
-                    //     }
-
-                    //     i {
-                    //       font-size: 20px;
-                    //       color: #e2e4e6;
-                    //     }
-                    //   }
-
-                    //   .value:hover {
-                    //     cursor: pointer;
-                    //   }
-
-                    //   .options {
-                    //     border: none !important;
-                    //     text-align: left;
-                    //     display: none !important;
-                    //     align-items: center;
-                    //     gap: 3px;
-                    //     // padding: 2px 0px 2px 5px;
-                    //     padding: 0;
-                    //     position: absolute;
-                    //     top: 0;
-                    //     z-index: -3;
-                    //     transition: all 1s ease;
-
-                    //     img {
-                    //       width: 20px;
-                    //       height: 20px;
-                    //       margin-right: 27px;
-                    //     }
-                    //   }
-
-                    //   .options:hover {
-                    //     cursor: pointer;
-                    //   }
-
-                    //   .x2Div {
-                    //     width: 176.4px;
-                    //     position: absolute;
-                    //     top: 19px;
-                    //     display: flex;
-                    //     padding: 2px 0px 2px 5px;
-                    //     border: 1px solid #eef1f4;
-                    //   }
-                    //   .x3Div {
-                    //     width: 176.4px;
-                    //     position: absolute;
-                    //     top: -4px;
-                    //     display: flex;
-                    //     padding: 2px 0px 2px 5px;
-                    //     border: 1px solid #eef1f4;
-                    //   }
-
-                    //   .x2 {
-                    //     border: 1px solid #eef1f4;
-                    //     position: absolute;
-                    //     transition: all 1s ease;
-                    //     // display: none !important;
-                    //     top: -10;
-                    //     z-index: -3;
-                    //   }
-                    //   .x3 {
-                    //     position: absolute;
-                    //     border: 1px solid #eef1f4;
-                    //     display: none;
-                    //     transition: all 1s ease;
-                    //     // display: none;
-                    //     // z-index: -3;
-                    //   }
-
-                    //   ._modal {
-                    //     position: absolute;
-                    //     top: 19px;
-                    //     left: 0;
-                    //     display: flex !important;
-                    //     width: 176.4px;
-                    //     transition: all 1s ease;
-                    //     z-index: -3;
-                    //   }
-
-                    //   ._modalx3 {
-                    //     transition: all 1s ease;
-                    //     position: absolute;
-                    //     display: flex !important;
-                    //     top: 76px;
-                    //     width: 176.4px;
-                    //   }
-                    // }
-
                     img {
                       width: 16px;
                       height: 15px;
@@ -607,12 +494,9 @@
                       position: relative;
                       padding: 0;
                       margin-top: -20px;
-                      transition: all 0.3s ease !important;
+                      transition: all 0.8s ease !important;
                       opacity: 0;
                       visibility: hidden;
-
-                      li {
-                      }
                     }
                     .enable {
                       opacity: 1;
@@ -620,116 +504,150 @@
                       margin-top: 0;
                     }
                     .forBtn {
-                      // width: 174.4px ;
                       display: block;
-                      // background-color: #00ff00;
                       border: 1px solid #e2e4e6;
-                      padding: 10px 20px;
-                      // margin: 10px;
-                    }
-                    li {
-                      border: 1px solid #e2e4e6;
-                      display: flex;
-                      padding: 8px 0px 7px 5px;
+                      padding: 2px 0px 2px 5px;
 
-                      h4 {
-                        line-height: 16px;
-                        font-style: normal;
-                        font-size: 12px;
-                        font-weight: 400;
-                        color: #333;
+                      .aDiv {
+                        display: flex;
+                        align-items: center;
+                        p {
+                          line-height: 16px !important;
+                          font-family: var(--main-font);
+                          font-style: normal;
+                          font-size: 12px;
+                          font-weight: 400 !important;
+                          color: #333;
+                        }
                       }
-
                       img {
                         width: 20px;
                         height: 20px;
-                        margin-right: 27px;
+                        // margin-right: 27px;
+                      }
+
+                      i {
+                        font-size: 25px;
+                        color: #dfd6d6;
                       }
                     }
                   }
-                }
-              }
-              .roomsNum {
-                .user {
-                  padding: 10px 19px 100px 18px;
-                  border-top: 1px solid #e2e4e6;
-                  height: 179px;
-                }
-              }
+                  li {
+                    border: 1px solid #e2e4e6;
+                    display: flex;
+                    padding: 8px 0px 7px 5px;
 
-              .price {
-                .price_in {
-                  padding: 10px 19px 100px 18px;
-                  border-top: 1px solid #e2e4e6;
-                  height: 179px;
-                  p {
-                    font-size: 15px;
-                    font-weight: 700;
-                    letter-spacing: 0;
-                    color: #282828;
-                    margin-top: 5px;
-                  }
-                }
-              }
+                    h4 {
+                      line-height: 16px;
+                      font-style: normal;
+                      font-size: 12px;
+                      font-weight: 400;
+                      color: #333;
+                    }
 
-              .parametrs {
-                padding: 10px 19px 5px 18px;
-                .parametrs_parts {
-                  padding: 14px 0px 0px 17px !important;
-                  display: flex;
-                  gap: 5px;
-                  margin-top: 3px;
-                  i {
-                    font-size: 16px;
-                    color: #4cd964;
-                  }
-
-                  img {
-                    margin-top: -49px;
-                  }
-
-                  p {
-                    font-weight: 400;
-                    font-size: 12px;
-                    color: #282828;
-
-                    span {
-                      color: #4cd964;
+                    img {
+                      width: 20px;
+                      height: 20px;
+                      margin-right: 27px;
                     }
                   }
+                }
+              }
+            }
+            .roomsNum {
+              .user {
+                padding: 10px 19px 100px 18px;
+                border-top: 1px solid #e2e4e6;
+                height: 179px;
+              }
+            }
 
-                  .cencel {
+            .price {
+              .price_in {
+                padding: 10px 19px 100px 18px;
+                border-top: 1px solid #e2e4e6;
+                height: 179px;
+                p {
+                  font-size: 15px;
+                  font-weight: 700;
+                  letter-spacing: 0;
+                  color: #282828;
+                  margin-top: 5px;
+                }
+              }
+            }
+
+            .parametrs {
+              padding: 10px 19px 5px 18px;
+              .parametrs_parts {
+                padding: 14px 0px 0px 17px !important;
+                display: flex;
+                gap: 5px;
+                margin-top: 3px;
+                i {
+                  font-size: 16px;
+                  color: #4cd964;
+                }
+
+                img {
+                  margin-top: -49px;
+                }
+
+                p {
+                  font-weight: 400;
+                  font-size: 12px;
+                  color: #282828;
+
+                  span {
                     color: #4cd964;
                   }
                 }
-              }
 
-              .choosingRoom {
-                font-weight: 400;
-                font-size: 11px;
-                letter-spacing: 0;
-                color: #333;
-                .select_s {
-                  padding: 10px 19px 100px 18px;
-                  border-top: 1px solid #e2e4e6;
-                  height: 179px;
-                  select {
-                    width: 100%;
-                    padding: 0px 17px 0px 7px;
-                    border: none;
-                    border: 1px solid #e3e3e3;
-                  }
+                .cencel {
+                  color: #4cd964;
                 }
               }
             }
 
-            .blueBorder {
-              border: 1px solid #0369d9;
-              background: rgba(0, 122, 255, 0.05);
+            .choosingRoom {
+              font-weight: 400;
+              font-size: 11px;
+              letter-spacing: 0;
+              color: #333;
+              .select_s {
+                padding: 10px 19px 100px 18px;
+                border-top: 1px solid #e2e4e6;
+                height: 179px;
+                select {
+                  width: 100%;
+                  padding: 0px 17px 0px 7px;
+                  border: none;
+                  border: 1px solid #e3e3e3;
+                }
+              }
             }
+          }
+
+          .blueBorder {
+            border: 1px solid #0369d9;
+            background: rgba(0, 122, 255, 0.05);
+          }
+
+          .blueBorderAgain {
+            border: 1px solid #0369d9;
+            background: rgba(0, 122, 255, 0.05);
+          }
+          .blueBorderSecond {
+            border: 1px solid #0369d9;
+            background: rgba(0, 122, 255, 0.05);
+          }
+          .blueBorderThird {
+            border: 1px solid #0369d9;
+            background: rgba(0, 122, 255, 0.05);
           }
         }
       }
     }
   }
 }
+// }

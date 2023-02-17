@@ -533,7 +533,7 @@
                       <div class="th parametrs">Parametrlar</div>
                       <div class="th choosingRoom">Xona tanlash</div>
                     </div>
-                    <div class="table table_content">
+                    <div class="table table_content oneTable">
                       <div class="td rooms">
                         <div class="about_rooms">
                           <a href="#" class="link"
@@ -594,15 +594,17 @@
                       </div>
 
                       <div class="td choosingRoom">
+
                         <div class="select_s">
-                          <select name="selecRoomNum" id="selecRoomNum">
+                          <select name="selecRoomNum" class="selecRoomNum">
                             <option value="0" selected>0</option>
                             <option value="1">1</option>
                             <!-- <option value="1">2</option> -->
                           </select>
                         </div>
+
                         <div class="select_s">
-                          <select name="selecRoomNum" id="selecRoomNum">
+                          <select name="selecRoomNumNew" class="selecRoomNumNew">
                             <option value="0" selected>0</option>
                             <option value="1">1</option>
                             <!-- <option value="1">2</option> -->
@@ -611,7 +613,7 @@
                       </div>
                     </div>
 
-                    <div class="table table_content">
+                    <div class="table table_content NewTable">
                       <div class="td rooms">
                         <div class="about_rooms">
                           <a href="#" class="link"
@@ -625,49 +627,16 @@
                               />
                             </a>
                           </div>
-                          <!-- <form class="form">
-                              <div class="selected">
-                                <div class="value">
-                                  <p class="selectP">
-                                    ikkita alohida to'shakli ikki kishilik yotoq
-                                  </p>
-                                  <img src="./img/x2.png" alt="x2" />
-                                  <div class="icons">
-                                    <i class="ri-arrow-down-s-line"></i>
-                                  </div>
-                                </div>
 
-                                <div class="input_options">
-                                  <button
-                                    class="options x2 _modal"
-                                    id="optionsx2"
-                                  >
-                                    <div class=" x2Div">
-                                      <p class="OptionP">
-                                        ikkita alohida to'shakli ikki kishilik
-                                        yotoq
-                                      </p>
-                                      <img src="./img/x2.png" alt="x2" />
-                                    </div>
-                                  </button>
-
-                                  <button class="options x3 _modalx3" id="">
-                                    <div class="x3Div">
-                                      <p class="optionP2" onclick="choosing()">
-                                        Uchta alohida to'shakli uch kishilik
-                                        yotoq
-                                      </p>
-                                      <img src="./img/x3.png" alt="x3" />
-                                    </div>
-                                  </button>
-                                </div>
-                              </div>
-                            </form> -->
                           <form>
                             <div class="select-box">
                               <a class="forBtn">
+                                <div class="aDiv">
+                                  <p class="aDiv-child"></p>
+                                  <img alt="" class="aDiv-child2" />
+                                  <i class="ri-arrow-down-s-line"></i>
+                                </div>
                               </a>
-                              <!-- <img src="./img/x2.png" alt="x2" /> -->
                               <div class="mydiv">
                                 <ul class="selectsmy"></ul>
                               </div>
@@ -729,24 +698,19 @@
                       <div class="td choosingRoom">
                         <div class="select_s">
                           <form class="choosingRoomSelect">
-                            <select name="selecRoomNum" id="selecRoomNum">
-                              <option
-                                class="_selected"
-                                type="button
-                              "
-                                value="0"
-                                selected
-                              >
-                                0
+                            <select name="selecRoomNumOne" class="selecRoomNumOne">
+                              <option class="_selected" value="0" selected>
+                                <a href="#" class="_selected">0</a>
                               </option>
-                              <option class="_selected" value="1">1</option>
-                              <option class="_selected" value="1">2</option>
+                              <option class="_selected" value="1">
+                                <a href="#">1</a>
+                              </option>
                             </select>
                           </form>
                         </div>
 
                         <div class="select_s">
-                          <select name="selecRoomNum" id="selecRoomNum">
+                          <select name="selecRoomNumSecond" class="selecRoomNumSecond">
                             <option value="0" selected>0</option>
                             <option value="1">1</option>
                             <option value="1">2</option>
@@ -754,7 +718,7 @@
                         </div>
 
                         <div class="select_s">
-                          <select name="selecRoomNum" id="selecRoomNum">
+                          <select name="selecRoomNumThird" class="selecRoomNumThird">
                             <option value="0" selected>0</option>
                             <option value="1">1</option>
                             <option value="1">2</option>
